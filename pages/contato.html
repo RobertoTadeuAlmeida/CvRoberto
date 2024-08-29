@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
@@ -12,10 +12,34 @@
     </header>
     <div id="menu-placeholder"></div>
     <main>
-        <p>Nome: <br><input type="text"></p>
-        <p>E-mail: <br><input type="text"></p>
-        <p>Mensagem: <br><input type="text"></p>
-        <p><input type="button" value="Enviar"></p>
+        <div class="contact-container">
+        
+            <p>Entre em contato comigo através do formulário abaixo ou pelas minhas redes sociais.</p>
+            
+            <form class="contact-form" action="#" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+        
+                <button type="submit">Enviar</button>
+            </form>
+            
+            <div class="contact-info">
+                <h2>Contato</h2>
+                <p>Ou entre em contato diretamente:</p>
+                <ul>
+                    <li><a href="mailto:robertotadeudealmeida@gmail.com">Email: robertotadeudealmeida@gmail.com</a></li>
+                    <li><a href="https://github.com/RobertoTadeuAlmeida">GitHub: RobertoTadeuAlmeida</a></li>
+                    <li><a href="https://www.linkedin.com/in/roberto-almeida-2b6b90263">LinkedIn: Roberto Almeida</a></li>
+                </ul>
+            </div>
+        </div>
+        
     </main>
     <footer>
         <div id="footer-placeholder"></div>

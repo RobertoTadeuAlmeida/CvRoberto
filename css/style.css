@@ -1,43 +1,63 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #3a3a3a;
+    --secondary-hover-color: #171718;
+    --background-light: #f9f9f9;
+    --background-white: #ffffff;
+    --text-color-primary: #333;
+    --text-color-secondary: #555;
+    --text-color-tertiary: #777;
+    --border-color: #ddd;
+    --link-color: white;
+    --link-hover-color: #575757;
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Reseta o estilo padrão para todos os elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos do header */
 header {
     padding: 20px;
-    background-color: #333;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--link-color);
     text-align: center;
-    
 }
 
-main{
+/* Estilos do main */
+main {
     padding: 30px;
 }
 
+/* Estilos do body */
 body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
 }
 
+/* Estilos da seção 'Sobre Mim' */
 .about-me {
     padding: 40px;
-    background-color: #f9f9f9;
+    background-color: var(--background-light);
     border-radius: 8px;
     margin: 20px auto;
     max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--box-shadow-color);
 }
 
 .about-me h2 {
     text-align: center;
     font-size: 28px;
-    color: #333;
+    color: var(--text-color-primary);
     margin-bottom: 20px;
 }
 
+/* Estilos do conteúdo da seção 'Sobre Mim' */
 .about-me-content {
     display: flex;
     flex-direction: row;
@@ -45,48 +65,52 @@ body {
     gap: 20px;
 }
 
+/* Estilos da foto de perfil */
 .profile-photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #ddd;
+    border: 3px solid var(--border-color);
 }
 
+/* Estilos do texto na seção 'Sobre Mim' */
 .about-me-text {
     flex-grow: 1;
 }
 
 .about-me-text p {
     font-size: 16px;
-    color: #555;
+    color: var(--text-color-secondary);
     line-height: 1.6;
     margin-bottom: 10px;
 }
 
+/* Estilos da seção 'Formação Acadêmica' */
 .academic-background {
     padding: 40px;
-    background-color: #f9f9f9; 
+    background-color: var(--background-light);
     margin: 20px auto;
     max-width: 800px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 8px var(--box-shadow-color);
 }
 
 .academic-background h2 {
     text-align: center;
     font-size: 28px;
-    color: #333; 
+    color: var(--text-color-primary);
     margin-bottom: 30px;
 }
 
+/* Estilos dos itens da seção 'Formação Acadêmica' */
 .academic-item {
     margin-bottom: 30px;
     padding: 20px;
-    background-color: #ffffff; 
+    background-color: var(--background-white);
     border-radius: 8px;
-    border-left: 4px solid #333; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border-left: 4px solid var(--primary-color);
+    box-shadow: 0 2px 4px var(--box-shadow-color);
 }
 
 .academic-item p {
@@ -95,28 +119,198 @@ body {
 
 .academic-item h3 {
     font-size: 22px;
-    color: #555; 
+    color: var(--text-color-secondary);
     margin: 0;
 }
 
 .institution {
     font-size: 16px;
-    color: #555; 
+    color: var(--text-color-secondary);
     margin: 5px 0;
     font-weight: bold;
 }
 
 .duration {
     font-size: 14px;
-    color: #777; 
+    color: var(--text-color-tertiary);
     margin: 5px 0 15px;
     font-style: italic;
 }
 
 .description {
     font-size: 16px;
-    color: #333; 
+    color: var(--text-color-primary);
     line-height: 1.6;
+}
+
+/* Container principal da seção de portfólio */
+.portfolio-container {
+    padding: 40px;
+    background-color: var(--background-light);
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--box-shadow-color);
+    text-align: center;
+}
+
+/* Estilo do título da seção de portfólio */
+.portfolio-container h2 {
+    font-size: 28px;
+    color: var(--text-color-primary);
+    margin-bottom: 20px;
+}
+
+/* Estilo de cada projeto listado na seção de portfólio */
+.project {
+    padding: 20px;
+    background-color: var(--background-white);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--box-shadow-color);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Estilo para o título de cada projeto */
+.project h3 {
+    font-size: 22px;
+    color: var(--text-color-primary);
+    margin-bottom: 10px;
+}
+
+/* Estilo para a descrição de cada projeto */
+.project p {
+    font-size: 16px;
+    color: var(--text-color-secondary);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Estilo para o link do GitHub ou outro link relacionado ao projeto */
+.project a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Efeito ao passar o mouse sobre os links dos projetos */
+.project a:hover {
+    color: var(--secondary-hover-color);
+}
+
+
+/* Estilos da seção 'Contato' */
+.contact-container {
+    padding: 40px;
+    background-color: var(--background-light);
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--box-shadow-color);
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 28px;
+    color: var(--text-color-primary);
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    font-size: 16px;
+    color: var(--text-color-secondary);
+    margin-bottom: 30px;
+}
+
+/* Estilos do formulário de contato */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: var(--text-color-primary);
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--link-color);
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary-hover-color);
+}
+
+/* Estilos da informação de contato */
+.contact-info {
+    margin-top: 40px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: var(--text-color-secondary);
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: var(--secondary-hover-color);
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -133,18 +327,21 @@ body {
         font-size: 20px;
     }
 
-    .institution, .duration, .description {
+    .institution,
+    .duration,
+    .description {
         font-size: 14px;
     }
 }
 
+/* Estilos do menu */
 .menu {
     position: fixed;
     right: 0;
     top: 0;
     width: 200px;
     height: 100%;
-    background-color: #333;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,7 +357,7 @@ ul {
 
 .menu ul li a {
     text-decoration: none;
-    color: white;
+    color: var(--link-color);
     font-size: 18px;
     display: block;
     text-align: center;
@@ -169,40 +366,40 @@ ul {
 }
 
 .menu ul li a:hover {
-    background-color: #575757;
+    background-color: var(--link-hover-color);
 }
 
-/* Estilo para o conteúdo principal */
+/* Estilos do conteúdo */
 .content {
-    margin-right: 220px; 
+    margin-right: 220px;
     padding: 20px;
-    width: calc(100% - 220px); 
+    width: calc(100% - 220px);
     max-width: 100%;
-    overflow: auto; 
+    overflow: auto;
 }
 
-/* Estilo responsivo */
 @media (max-width: 768px) {
     .menu {
-        width: 150px; 
+        width: 150px;
     }
 
     .content {
-        margin-right: 170px; 
-        padding: 10px; 
+        margin-right: 170px;
+        padding: 10px;
     }
 
     .menu ul li a {
-        font-size: 16px; 
+        font-size: 16px;
     }
 }
 
+/* Estilos do footer */
 .footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: var(--primary-color);
     text-align: center;
     padding: 10px 0;
 }
@@ -210,7 +407,7 @@ ul {
 .footer a {
     margin: 0 15px;
     text-decoration: none;
-    color: white;
+    color: var(--link-color);
     font-size: 18px;
     transition: transform 0.3s;
 }
@@ -224,4 +421,3 @@ ul {
     height: 24px;
     vertical-align: middle;
 }
-
