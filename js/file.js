@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const isIndexPage = location.pathname.endsWith("index.html");
     
-    const menuPath = isIndexPage ? "menu.html" : "../menu.html";
-    const footerPath = isIndexPage ? "footer.html" : "../footer.html";
+    const menuPath = isIndexPage ? "/components/menu.html" : "../components/menu.html";
+    const footerPath = isIndexPage ? "/components/footer.html" : "../components/footer.html";
     
     fetch(menuPath)
         .then(response => response.text())
