@@ -13,14 +13,13 @@
     --box-shadow-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Reseta o estilo padrão para todos os elementos */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos do header */
 header {
     padding: 20px;
     background-color: var(--primary-color);
@@ -28,19 +27,23 @@ header {
     text-align: center;
 }
 
-/* Estilos do main */
-main {
-    padding: 30px;
+main,header {
+    margin-right: 220px; 
+    padding: 20px;
+    width: calc(100% - 220px); 
+    max-width: 100%;
+    overflow: auto; 
+    z-index: 1;
+    
 }
 
-/* Estilos do body */
 body {
+    background-color: var(--primary-color);
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
 }
 
-/* Estilos da seção 'Sobre Mim' */
 .about-me {
     padding: 40px;
     background-color: var(--background-light);
@@ -57,7 +60,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Estilos do conteúdo da seção 'Sobre Mim' */
 .about-me-content {
     display: flex;
     flex-direction: row;
@@ -65,7 +67,6 @@ body {
     gap: 20px;
 }
 
-/* Estilos da foto de perfil */
 .profile-photo {
     width: 150px;
     height: 150px;
@@ -74,7 +75,6 @@ body {
     border: 3px solid var(--border-color);
 }
 
-/* Estilos do texto na seção 'Sobre Mim' */
 .about-me-text {
     flex-grow: 1;
 }
@@ -86,7 +86,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* Estilos da seção 'Formação Acadêmica' */
 .academic-background {
     padding: 40px;
     background-color: var(--background-light);
@@ -103,7 +102,6 @@ body {
     margin-bottom: 30px;
 }
 
-/* Estilos dos itens da seção 'Formação Acadêmica' */
 .academic-item {
     margin-bottom: 30px;
     padding: 20px;
@@ -143,7 +141,6 @@ body {
     line-height: 1.6;
 }
 
-/* Container principal da seção de portfólio */
 .portfolio-container {
     padding: 40px;
     background-color: var(--background-light);
@@ -154,14 +151,12 @@ body {
     text-align: center;
 }
 
-/* Estilo do título da seção de portfólio */
 .portfolio-container h2 {
     font-size: 28px;
     color: var(--text-color-primary);
     margin-bottom: 20px;
 }
 
-/* Estilo de cada projeto listado na seção de portfólio */
 .project {
     padding: 20px;
     background-color: var(--background-white);
@@ -171,14 +166,12 @@ body {
     text-align: left;
 }
 
-/* Estilo para o título de cada projeto */
 .project h3 {
     font-size: 22px;
     color: var(--text-color-primary);
     margin-bottom: 10px;
 }
 
-/* Estilo para a descrição de cada projeto */
 .project p {
     font-size: 16px;
     color: var(--text-color-secondary);
@@ -186,7 +179,6 @@ body {
     margin-bottom: 15px;
 }
 
-/* Estilo para o link do GitHub ou outro link relacionado ao projeto */
 .project a {
     text-decoration: none;
     color: var(--secondary-color);
@@ -199,8 +191,6 @@ body {
     color: var(--secondary-hover-color);
 }
 
-
-/* Estilos da seção 'Contato' */
 .contact-container {
     padding: 40px;
     background-color: var(--background-light);
@@ -269,7 +259,6 @@ body {
     background-color: var(--secondary-hover-color);
 }
 
-/* Estilos da informação de contato */
 .contact-info {
     margin-top: 40px;
 }
@@ -334,7 +323,6 @@ body {
     }
 }
 
-/* Estilos do menu */
 .menu {
     position: fixed;
     right: 0;
@@ -370,7 +358,6 @@ ul {
     background-color: var(--link-hover-color);
 }
 
-/* Estilos do conteúdo */
 .content {
     margin-right: 220px;
     padding: 20px;
@@ -395,7 +382,6 @@ ul {
     }
 }
 
-/* Estilos do footer */
 .footer {
     position: fixed;
     bottom: 0;
@@ -404,6 +390,7 @@ ul {
     background-color: var(--primary-color);
     text-align: center;
     padding: 10px 0;
+    z-index: 2;
 }
 
 .footer a {
