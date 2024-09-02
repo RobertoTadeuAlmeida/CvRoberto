@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Bem-vindo</title>
 </head>
 <body>
-    <button onclick="window.location.href='pages/sobre.html';">Ir para a Página Inicial</button>
-
-    
+    <div class="welcome-container">
+        <div class="photo-container">
+            <img src="caminho-para-sua-foto.jpg" alt="Sua Foto" class="profile-photo">
+        </div>
+        <h1>Seja Bem-Vindo!</h1>
+        <p>Estamos felizes em tê-lo aqui. Clique no botão abaixo para entrar no site.</p>
+        <button onclick="window.location.href='/pages/sobre.html';" class="button">Entrar</button>
+    </div>
 </body>
 </html>
