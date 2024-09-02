@@ -39,7 +39,7 @@ main,header {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
