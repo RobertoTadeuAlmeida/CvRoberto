@@ -79,7 +79,7 @@ body {
 /* Estilos para o botão de entrada */
 .button {
     padding: 10px 20px;
-    background-color: var(--button-bg-color);
+    background-color: var(--link-hover-color);
     color: var(--secondary-hover-color);
     font-size: 18px;
     border: none;
@@ -90,7 +90,8 @@ body {
 }
 
 .button:hover {
-    background-color: var(--button-hover-bg-color);
+    background-color: var(--secondary-hover-color);
+    color: white;
 }
 
 .about-me {
@@ -424,14 +425,16 @@ ul {
 }
 
 .footer {
+    
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: calc(100% - 200px);
+    max-width: 100%;
     background-color: var(--primary-color);
     text-align: center;
-    padding: 10px 0;
-    z-index: 2;
+    padding: 10px;
+    z-index: 1;
 }
 
 .footer a {
