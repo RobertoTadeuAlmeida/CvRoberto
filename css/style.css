@@ -19,7 +19,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*Estilo do cabeçalho*/
 header {
     padding: 20px;
     background-color: var(--primary-color);
@@ -37,6 +37,7 @@ main,header {
     
 }
 
+/*Estilo do corpo*/
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -94,6 +95,7 @@ body {
     color: white;
 }
 
+/*Estilo da pagina Sobre*/
 .about-me {
     padding: 40px;
     background-color: var(--background-light);
@@ -128,6 +130,7 @@ body {
     margin-bottom: 10px;
 }
 
+/*Estilo da pagina formação*/
 .academic-background {
     padding: 40px;
     background-color: var(--background-light);
@@ -233,6 +236,7 @@ body {
     color: var(--secondary-hover-color);
 }
 
+/*Estilo da pagina de contato*/
 .contact-container {
     padding: 40px;
     background-color: var(--background-light);
@@ -365,6 +369,7 @@ body {
     }
 }
 
+/*Estilo do menu*/
 .menu {
     position: fixed;
     right: 0;
@@ -424,6 +429,7 @@ ul {
     }
 }
 
+/*Estilo do rodape*/
 .footer {
     
     position: fixed;
